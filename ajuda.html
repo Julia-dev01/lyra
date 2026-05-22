@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyra — Central de Ajuda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Ly<span>ra</span></a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="ajuda.html" class="active">Central de Ajuda</a></li>
+    </ul>
+    <a href="cadastro.html" class="nav-btn-cadastro">Criar cadastro</a>
+  </nav>
+
+  <div class="pagina">
+
+    <header class="cabecalho-pagina">
+      <p class="rotulo-secao">Central de Ajuda</p>
+      <h1 class="titulo-pagina">Você não está <em>sozinha.</em></h1>
+      <p class="subtitulo-pagina">
+        Contatos de emergência, orientações de segurança e recursos de apoio.
+        Guarde estes números — eles podem salvar uma vida.
+      </p>
+    </header>
+
+    <div class="secao-ajuda">
+
+      <!-- coluna esquerda: contatos de emergência -->
+      <div>
+
+        <div class="banner-emergencia">
+          <h3>Precisa de ajuda agora?</h3>
+          <p>
+            Se você está em perigo imediato, acione a polícia ou a Central da
+            Mulher. Não precisa de internet — basta uma ligação.
+          </p>
+          <span class="banner-numero">190</span>
+          <small>Polícia Militar — disponível 24 horas, todos os dias</small>
+          <p class="banner-relogio" id="relogioAjuda" style="margin-top:12px; font-size:13px; opacity:0.85;"></p>
+        </div>
+
+        <h2 class="titulo-coluna">Contatos essenciais</h2>
+
+        <div class="card-contato">
+          <div class="contato-icone">📞</div>
+          <div>
+            <p class="contato-nome">Central de Atendimento à Mulher</p>
+            <p class="contato-numero">180</p>
+            <p class="contato-desc">Funciona 24h por dia, 7 dias por semana. Orientação, acolhimento e encaminhamentos.</p>
+          </div>
+        </div>
+
+        <div class="card-contato">
+          <div class="contato-icone">🚨</div>
+          <div>
+            <p class="contato-nome">Polícia Militar</p>
+            <p class="contato-numero">190</p>
+            <p class="contato-desc">Para situações de emergência e violência em curso. Atendimento imediato.</p>
+          </div>
+        </div>
+
+        <div class="card-contato">
+          <div class="contato-icone">🏥</div>
+          <div>
+            <p class="contato-nome">SAMU</p>
+            <p class="contato-numero">192</p>
+            <p class="contato-desc">Para urgências médicas decorrentes de agressões físicas.</p>
+          </div>
+        </div>
+
+        <div class="card-contato">
+          <div class="contato-icone">💛</div>
+          <div>
+            <p class="contato-nome">CVV — Centro de Valorização da Vida</p>
+            <p class="contato-numero">188</p>
+            <p class="contato-desc">Apoio emocional e suporte em crises. Funciona 24h, inclusive por chat.</p>
+          </div>
+        </div>
+
+        <div class="card-contato">
+          <div class="contato-icone">⚖️</div>
+          <div>
+            <p class="contato-nome">Defensoria Pública</p>
+            <p class="contato-numero">129</p>
+            <p class="contato-desc">Orientação jurídica gratuita. Medidas protetivas, divórcio e guarda de filhos.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- coluna direita: como denunciar + segurança digital -->
+      <div>
+
+        <h2 class="titulo-coluna">Como denunciar com segurança</h2>
+
+        <div class="lista-passos">
+          <div class="passo-item">
+            <div class="passo-numero">1</div>
+            <div>
+              <p class="passo-titulo">Garanta sua segurança imediata</p>
+              <p class="passo-desc">
+                Se possível, vá para um local seguro antes de fazer a denúncia.
+                Uma delegacia, a casa de um familiar ou a de um vizinho de confiança.
+              </p>
+            </div>
+          </div>
+          <div class="passo-item">
+            <div class="passo-numero">2</div>
+            <div>
+              <p class="passo-titulo">Reúna evidências que puder</p>
+              <p class="passo-desc">
+                Fotos de lesões, mensagens, áudios e testemunhas são úteis, mas não
+                são obrigatórios para registrar um boletim de ocorrência.
+              </p>
+            </div>
+          </div>
+          <div class="passo-item">
+            <div class="passo-numero">3</div>
+            <div>
+              <p class="passo-titulo">Registre o boletim de ocorrência</p>
+              <p class="passo-desc">
+                Procure a Delegacia da Mulher mais próxima, uma delegacia comum ou
+                o cartório eletrônico online. O atendimento é gratuito.
+              </p>
+            </div>
+          </div>
+          <div class="passo-item">
+            <div class="passo-numero verde">4</div>
+            <div>
+              <p class="passo-titulo">Solicite medida protetiva</p>
+              <p class="passo-desc">
+                Após o BO, o juiz tem 48h para analisar o pedido de medida protetiva
+                de urgência previsto na Lei Maria da Penha.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- dicas de segurança digital -->
+        <div class="caixa-seguranca-digital">
+          <p class="label-interno">Segurança digital</p>
+          <h4>Cuide do seu rastro digital</h4>
+          <p>
+            Se o agressor tem acesso ao seu celular ou computador, tome precauções
+            antes de usar esta plataforma.
+          </p>
+          <ul class="lista-dicas">
+            <li><span>✦</span> Use o modo anônimo/privativo do navegador</li>
+            <li><span>✦</span> Apague o histórico do navegador após navegar</li>
+            <li><span>✦</span> Use o botão "Sair" desta plataforma ao terminar</li>
+            <li><span>✦</span> Se possível, acesse de um dispositivo que não é seu</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="rodape">
+      <div class="rodape-inner">
+        <div>
+          <p class="rodape-marca-nome">Lyra</p>
+          <p class="rodape-marca-desc">Para quem precisa de direção, não de exposição.</p>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="ajuda.html">Central de Ajuda</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Emergência</h4>
+          <ul>
+            <li><a href="ajuda.html">Central da Mulher — 180</a></li>
+            <li><a href="ajuda.html">Polícia — 190</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© 2025 Lyra</span>
+        <span>Projeto TCC — Júlia das Neves Paim</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
