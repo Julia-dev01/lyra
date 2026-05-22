@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+
+  <div class="nav-logo">
+    Lyra<span>.</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="denuncias.html">Denúncias</a>
+    <a href="pesquisas.html">Pesquisas</a>
+    <a href="dashboard.html">Dashboard</a>
+  </div>
+
+</nav>
+
+  <nav class="nav">
+    <div class="nav-logo">Lyra<span>.</span></div>
+    <div class="nav-links">
+      <a href="#">Início</a>
+      <a href="#">Ajuda</a>
+      <a href="#">Pesquisas</a>
+    </div>
+  </nav>
+
+  <main class="pagina" style="padding:100px 40px;">
+    <section>
+      <h1 class="hero-titulo">Rede de apoio contra a violência à mulher</h1>
+      <p class="hero-descricao">
+        Plataforma segura para acolhimento, denúncias e informações rápidas.
+      </p>
+    </section>
+
+    <section class="dashboard">
+      <div class="card-info">
+        <h3>Denúncias realizadas</h3>
+        <p id="contadorDenuncias">0</p>
+      </div>
+
+      <div class="card-info">
+        <h3>Informações rápidas</h3>
+        <p>Ligue 180 para denúncias e apoio imediato.</p>
+      </div>
+
+      <div class="card-info">
+        <h3>Atendimento</h3>
+        <p>Disponível 24 horas por dia.</p>
+      </div>
+    </section>
+<section class="card-info cadastro-container">
+  <h2>Cadastro de denúncia</h2>
+
+  <form id="formCadastro" class="formulario-denuncia">
+
+    <label>Nome completo <span>*</span></label>
+    <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+    <label>Endereço <span>*</span></label>
+    <input type="text" id="endereco" placeholder="Digite seu endereço completo">
+
+    <label>Selecione o tipo de violência <span>*</span></label>
+    <select id="violencia">
+      <option value="">Selecione uma opção</option>
+      <option>Violência Física</option>
+      <option>Violência Psicológica</option>
+      <option>Violência Moral</option>
+      <option>Violência Patrimonial</option>
+      <option>Violência Sexual</option>
+    </select>
+
+    <small class="info-criptografia">
+      🔒 Informação criptografada e protegida
+    </small>
+
+    <label>O agressor tem algum tipo de arma? <span>*</span></label>
+    <select id="arma">
+      <option value="">Selecione uma opção</option>
+      <option>Sim</option>
+      <option>Não</option>
+    </select>
+
+    <div id="campoTipoArma" class="campo-arma oculto">
+      <label>Qual tipo de arma? <span>*</span></label>
+
+      <select id="tipoArma">
+        <option value="">Selecione o tipo</option>
+        <option>Arma de fogo</option>
+        <option>Faca</option>
+        <option>Objeto cortante</option>
+        <option>Outro</option>
+      </select>
+
+      <small class="alerta-seguranca">
+        ⓘ Esta informação é importante para sua segurança
+      </small>
+    </div>
+
+    <label>Existe algum familiar para contato de emergência?</label>
+    <select id="contatoEmergencia">
+      <option value="">Selecione uma opção</option>
+      <option>Sim</option>
+      <option>Não</option>
+    </select>
+
+    <div id="campoTelefone" class="oculto">
+      <label>Telefone do familiar</label>
+      <input type="text" id="telefone" placeholder="(00) 00000-0000">
+    </div>
+
+    <div class="privacidade-box">
+      <h3>🛡 Privacidade e Segurança</h3>
+      <p>
+        Todos os seus dados são armazenados de forma criptografada e confidencial.
+        Apenas você tem acesso a essas informações, que são usadas exclusivamente
+        para sua proteção e segurança.
+      </p>
+    </div>
+
+    <button type="submit" class="btn-cadastro">
+      ✔ Concluir cadastro
+    </button>
+
+    <div id="mensagem"></div>
+  </form>
+</section>
+
+    <section class="card-info" style="margin-top:30px;">
+      <h2>Pesquisas sobre feminicídio e violência contra mulher</h2>
+      <ul class="lista-pesquisas">
+        <li>Segundo o Fórum Brasileiro de Segurança Pública, milhares de mulheres sofrem violência doméstica todos os anos.</li>
+        <li>Grande parte das denúncias ocorre dentro do ambiente familiar.</li>
+        <li>O acesso à informação e acolhimento aumenta as chances de denúncia e proteção.</li>
+      </ul>
+    </section>
+  </main>
+
+  <button class="dark-toggle" id="darkModeBtn">Dark Mode</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
